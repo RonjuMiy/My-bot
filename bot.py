@@ -7,7 +7,7 @@ TOKEN = "8935858251:AAHr47uRXEF3oeafpgGdWrdErPz3geOQYLE"
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
 
-@dp.message_handler(commands=['start'])
+@dp.message(commands=['start'])
 async def start(message: Message):
     inline_menu = InlineKeyboardMarkup(row_width=1)
     
