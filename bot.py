@@ -5,7 +5,7 @@ import asyncio
 TOKEN = "8935858251:AAHr47uRXEF3oeafpgGdWrdErPz3geOQYLE"
 
 bot = Bot(token=TOKEN)
-dp = Dispatcher(bot)
+dp = Dispatcher()
 
 @dp.message_handler(commands=['start'])
 async def start(message: Message):
